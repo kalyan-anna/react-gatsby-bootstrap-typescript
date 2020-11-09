@@ -30,7 +30,12 @@ export const RegoListItem: React.FC<RegoListItemProps> = ({ regoDetails }) => {
         onClick={handleItemClick}
       >
         <Card.Body>
-          <Card.Title className="text-secondary">{plate_number}</Card.Title>
+          <Card.Title
+            className="text-secondary"
+            style={{ letterSpacing: '2px' }}
+          >
+            {plate_number}
+          </Card.Title>
           <Card.Text>
             {make} - {colour}
           </Card.Text>
