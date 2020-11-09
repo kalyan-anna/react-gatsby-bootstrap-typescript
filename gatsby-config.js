@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Vehicle Rego`,
+    title: `Rego Shop`,
     description: `Gatsby bootstrap sample.`,
   },
   plugins: [
@@ -15,6 +15,16 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Rego Shop`,
+        short_name: `sample`,
+        start_url: `/`,
+        display: `minimal-ui`,
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-typography`,
     //   options: {
