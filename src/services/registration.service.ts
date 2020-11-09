@@ -85,7 +85,7 @@ const tempData = {
 
 const load = () => {
   return new Promise(resolve =>
-    setTimeout(() => resolve(tempData.registrations), 3000),
+    setTimeout(() => resolve(tempData.registrations), 1000),
   );
 };
 

@@ -1,5 +1,6 @@
 import { Spinner } from 'components/ui-kit';
 import React, { useEffect } from 'react';
+import { Col, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { loadRegistrationsRequest, regoSelectors } from 'state/rego';
 import { RegoListItem } from '../RegoListItem/RegoListItem';
@@ -16,11 +17,20 @@ const RegoList = () => {
   const empty = <div>No registrations found.</div>;
 
   const list = (
-    <div>
+    <Row className="mb-3 justify-content-center">
       {registrations.map(rego => (
-        <RegoListItem regoDetails={rego} key={rego.plate_number} />
+        <Col
+          key={rego.plate_number}
+          xs={12}
+          sm={6}
+          md={4}
+          lg={3}
+          className="m-1"
+        >
+          <RegoListItem regoDetails={rego} />
+        </Col>
       ))}
-    </div>
+    </Row>
   );
 
   if (loading) {

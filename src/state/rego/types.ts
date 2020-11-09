@@ -6,7 +6,7 @@ export interface Vehicle {
   type: string;
   make: string;
   model: string;
-  color: string;
+  colour: string;
   vin: string;
   tare_weight: number;
   gross_mass: number;
