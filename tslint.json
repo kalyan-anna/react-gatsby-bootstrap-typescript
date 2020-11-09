@@ -4,6 +4,7 @@
     "exclude": ["node_modules", "public", "static"]
   },
   "rules": {
-    "no-implicit-dependencies": false
+    "no-implicit-dependencies": false,
+    "no-submodule-imports": false
   }
 }
