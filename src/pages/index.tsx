@@ -1,11 +1,14 @@
 import { RegoList } from 'components/rego';
 import { AppLayout } from 'layouts';
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 const HomePage = () => {
   return (
     <AppLayout title="Home">
-      <RegoList />
+      <Container className="mt-5">
+        <RegoList />
+      </Container>
     </AppLayout>
   );
 };

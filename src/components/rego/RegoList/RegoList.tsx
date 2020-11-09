@@ -1,9 +1,11 @@
+import { Spinner } from 'components/ui-kit';
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { loadRegistrationsRequest } from 'state/rego';
+import { useDispatch, useSelector } from 'react-redux';
+import { loadRegistrationsRequest, regoSelectors } from 'state/rego';
 
 const RegoList = () => {
   const dispatch = useDispatch();
+  const loading = useSelector(regoSelectors.loading);
 
   useEffect(() => {
     dispatch(loadRegistrationsRequest());
@@ -11,7 +13,8 @@ const RegoList = () => {
 
   return (
     <div>
-      <h1>Registrations</h1>
+      <h1 className="mb-3 h1">Registrations</h1>
+      {loading ? <Spinner /> : <div></div>}
     </div>
   );
 };
