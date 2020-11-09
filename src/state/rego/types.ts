@@ -12,7 +12,7 @@ export interface Vehicle {
   gross_mass: number;
 }
 
-export interface VehicleRegoDetails {
+export interface RegoDetails {
   plate_number: string;
   registration: {
     expired: boolean;
@@ -26,7 +26,7 @@ export interface VehicleRegoDetails {
 }
 
 export interface RegoState {
-  registrations: VehicleRegoDetails[];
+  registrations: RegoDetails[];
   error: string;
   loading: boolean;
 }

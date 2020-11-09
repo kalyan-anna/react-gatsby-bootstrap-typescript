@@ -19,6 +19,7 @@ export const regoReducer = createReducer<RegoState>(defaultState, {
   },
   [LOAD_REGISTRATIONS_SUCCESS]: (state: RegoState, action) => {
     state.loading = false;
+    state.registrations = action.payload;
     return state;
   },
   [API_ERROR]: (state: RegoState, action) => {

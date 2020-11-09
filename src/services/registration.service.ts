@@ -84,7 +84,9 @@ const tempData = {
 };
 
 const load = () => {
-  return new Promise(resolve => setTimeout(() => resolve(tempData), 3000));
+  return new Promise(resolve =>
+    setTimeout(() => resolve(tempData.registrations), 3000),
+  );
 };
 
 export const registrationService = {

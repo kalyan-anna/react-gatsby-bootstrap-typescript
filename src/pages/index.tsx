@@ -7,7 +7,10 @@ const HomePage = () => {
   return (
     <AppLayout title="Home">
       <Container className="mt-5">
-        <RegoList />
+        <section className="text-center">
+          <h1 className="mb-4 h1">Registrations</h1>
+          <RegoList />
+        </section>
       </Container>
     </AppLayout>
   );
