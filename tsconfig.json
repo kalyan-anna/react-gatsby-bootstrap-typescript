@@ -1,0 +1,15 @@
+{
+  "include": ["./src/**/*"],
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "es5",
+    "jsx": "react",
+    "experimentalDecorators": false,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@ui-kit": ["ui-kit/index.ts"]
+    }
+  }
+}
