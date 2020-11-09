@@ -1,10 +1,14 @@
 import { createAction } from '@reduxjs/toolkit';
 import {
   API_ERROR,
-  LOAD_REGISTRATION_REQUEST,
-  LOAD_REGISTRATION_SUCCESS,
+  LOAD_REGISTRATIONS_REQUEST,
+  LOAD_REGISTRATIONS_SUCCESS,
 } from './types';
 
-export const loadRegistrationsRequest = createAction(LOAD_REGISTRATION_REQUEST);
-export const loadRegistrationsSuccess = createAction(LOAD_REGISTRATION_SUCCESS);
+export const loadRegistrationsRequest = createAction(
+  LOAD_REGISTRATIONS_REQUEST,
+);
+export const loadRegistrationsSuccess = createAction(
+  LOAD_REGISTRATIONS_SUCCESS,
+);
 export const apiError = createAction<string>(API_ERROR);

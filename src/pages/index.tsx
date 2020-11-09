@@ -1,8 +1,13 @@
+import { RegoList } from 'components/rego';
+import { AppLayout } from 'layouts';
 import React from 'react';
-import { AppLayout } from '../layouts';
 
 const HomePage = () => {
-  return <AppLayout title="Home"></AppLayout>;
+  return (
+    <AppLayout title="Home">
+      <RegoList />
+    </AppLayout>
+  );
 };
 
 export default HomePage;

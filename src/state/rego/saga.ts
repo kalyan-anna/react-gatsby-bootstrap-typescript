@@ -1,5 +1,5 @@
 import { takeLatest, put, call } from 'redux-saga/effects';
-import { LOAD_REGISTRATION_REQUEST } from './types';
+import { LOAD_REGISTRATIONS_REQUEST } from './types';
 import { registrationService } from 'services';
 import { loadRegistrationsSuccess } from './actions';
 
@@ -10,5 +10,5 @@ function* loadRegistration() {
 }
 
 export const regoSaga = [
-  takeLatest(LOAD_REGISTRATION_REQUEST, loadRegistration),
+  takeLatest(LOAD_REGISTRATIONS_REQUEST, loadRegistration),
 ];
