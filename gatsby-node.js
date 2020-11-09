@@ -7,3 +7,16 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     },
   });
 };
+
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions;
+
+  if (page.path.match(/^\/rego-details/)) {
+    console.log('path matched....');
+    page.matchPath = '/*';
+    createPage({
+      ...page,
+      path: '/',
+    });
+  }
+};

@@ -1,17 +1,15 @@
-import { RegoList } from 'components/rego';
+import { RegoDetailsForm, RegoList } from 'components/rego';
 import { AppLayout } from 'layouts';
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Router } from '@reach/router';
 
 const HomePage = () => {
   return (
     <AppLayout title="Home">
-      <Container className="mt-5">
-        <section className="text-center">
-          <h1 className="mb-4 h1">Registrations</h1>
-          <RegoList />
-        </section>
-      </Container>
+      <Router basepath="/">
+        <RegoList path="/" />
+        <RegoDetailsForm path="/rego-details/:plateNumber" />
+      </Router>
     </AppLayout>
   );
 };

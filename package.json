@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "scripts": {
     "build": "GATSBY_ACTIVE_ENV=production gatsby build",
-    "develop": "GATSBY_ACTIVE_ENV=local gatsby develop",
+    "develop": "GATSBY_ACTIVE_ENV=local gatsby develop --https",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
