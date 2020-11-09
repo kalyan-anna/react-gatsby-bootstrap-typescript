@@ -1,23 +1,30 @@
 module.exports = {
   siteMetadata: {
-    title: 'Vechile Registration',
-    description: 'Gatsby styled-components sample.',
+    title: `Vehicle Rego`,
+    description: `Gatsby bootstrap sample.`,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'images',
+        name: `images`,
         path: `${__dirname}/src/images`,
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
     // {
-    //   resolve: 'gatsby-plugin-google-analytics',
+    //   resolve: `gatsby-plugin-typography`,
     //   options: {
-    //     trackingId: "UA-178903400-1",
+    //     pathToConfigModule: `src/utils/typography`,
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: 'UA-178903400-1',
     //     head: true,
     //     anonymize: true,
     //   },
