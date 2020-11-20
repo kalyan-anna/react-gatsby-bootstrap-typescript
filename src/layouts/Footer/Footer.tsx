@@ -12,6 +12,8 @@ type SocialMediaProps = {
   }[];
 };
 
+// TODO 
+
 const SocialMedia: React.FC<SocialMediaProps> = ({ items }) => (
   <Nav className="d-flex flex-column  d-md-inline-flex flex-md-row">
     {items.map((item, index) => (
